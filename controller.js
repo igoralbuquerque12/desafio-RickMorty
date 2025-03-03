@@ -1,4 +1,4 @@
-const personagens = require('./characters.json');
+const personagensJSON = require('./characters.json');
 const { ordenadorAparicoes, ordenadorNomes } = require('./utils/ordenadores');
 const { desestruturarTemporadas } = require('./utils/desestruturadores')
 
@@ -6,13 +6,13 @@ exports.extraindoDatabase = (req, res) => {
     try {
         let personagensOrdenados = [], personagensVivos = [];
 
+        let personagens = desestruturarTemporadas(personagensJSON);
+
         for (let personagem of personagens){
             if (personagem.status == 'Alive') {
                 personagensVivos.push(personagem)
             };
         };
-
-        personagensVivos = desestruturarTemporadas(personagensVivos)
         
         if (req.params.ordenacao == 'Aparicoes') {
             personagensOrdenados = ordenadorAparicoes(personagensVivos);

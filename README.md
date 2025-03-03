@@ -1,27 +1,39 @@
-# Teste desenvolvedor JR.
+# Desafio Técnico: Rick and Morty - Personagens
 
-Utilizando Node.js e Express retorne uma página estática que contenha uma lista dos personagens de Rick e Morty com os seguintes atributos: `nome, gênero, status, quantidade de aparições em cada uma das temporadas e aparições no total`, os personagens devem ser lidos a partir do arquivo: `characters.json`.
+## Objetivo
+O objetivo deste projeto é desenvolver uma aplicação utilizando **Node.js** e **Express** para exibir de forma dinâmica uma lista dos personagens de *Rick and Morty*. A aplicação deve apresentar informações sobre cada personagem, como nome, gênero, status de vida e a quantidade de aparições ao longo das temporadas. 
 
-## Considerações:
+Para isso, o projeto exige a implementação de funcionalidades para ordenar os personagens de acordo com a quantidade de aparições e o nome, além de organizar esses dados de maneira clara para o usuário.
 
-- Devem ser listados somentes os personagens vivos
 
-- Ordenar por: (decrescente) quantidade de aparições, nome (crescente)
+## Habilidades Testadas
+- **Melhoria na lógica de programação** através da manipulação de arrays e implementação de algoritmos de ordenação.
+- **Desenvolvimento de habilidades full-stack:**
+  - Backend com **Node.js** e **Express**.
+  - Frontend com **HTML**, **EJS**, **Bootstrap** e **JavaScript**.
 
-- Existem 3 temporadas com 31 episódios ao todo, sendo a primeira temporada com 11 episódios e as restantes com 10 episódios cada.
+## O que foi Feito
 
-- Fique a vontade para utilizar qualquer motor de view (PUG, ejs, handlebars, etc..)
+### Lógica de Programação
+- **Ordenação dos personagens:**
+  - Ordenação alfabética (ordem crescente de nomes).
+  - Ordenação por quantidade de aparições (ordem decrescente).
+- **Função de processamento de episódios:**
+  - Criação de função que divide a lista de episódios em 3 inteiros, representando o número de aparições por temporada.
 
-# Envio do teste
+### Frontend
+- **HTML + EJS (motor de templates):**
+  - Exibição dinâmica dos dados na página.
+- **Bootstrap:**
+  - Estilização da interface da aplicação, como pode ser visto na file _example.png_.
+- **JavaScript:**
+  - Manipulação de dados e interação com o usuário.
 
-Ao finalizar, deve ser feito um PR (pull request) para este repositório contendo o seu nome e suas modificações para que seja feita a avaliação.
+### Backend
+- **Node.js + Express:**
+  - Estrutura do servidor e arquitetura **MVC**.
+- **Controller:**
+  - Processamento e envio do arquivo `characters.json` para a view.
 
-# Avaliação
-
-Irá ser avaliado: Seu conhecimento técnico, sua habilidade para resolver problemas de forma simples e eficiente e boas práticas de código.
-
-# Exemplo
-
-Quanto ao design fique livre para criar, no entanto todos os dados devem ser exibidos conforme é mostrado no seguinte exemplo:
-
-![alt text](/example.png)
+## Conclusão
+Esse projeto me permitiu aplicar conceitos técnicos como **ordenação** e **arquitetura MVC**, além de desenvolver uma aplicação **full-stack** funcional, consolidando e ampliando minhas habilidades como desenvolvedor.
