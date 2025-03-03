@@ -1,5 +1,6 @@
 const personagens = require('./characters.json');
-const { ordenador } = require('./utils/ordenador');
+const { ordenadorAparicoes, ordenadorNomes } = require('./utils/ordenadores');
+const { desestruturarTemporadas } = require('./utils/desestruturadores')
 
 exports.extraindoDatabase = (req, res) => {
     try {
@@ -11,18 +12,20 @@ exports.extraindoDatabase = (req, res) => {
             };
         };
 
+        personagensVivos = desestruturarTemporadas(personagensVivos)
+        
         if (req.params.ordenacao == 'Aparicoes') {
-            personagensOrdenados = ordenador(personagensVivos);
+            personagensOrdenados = ordenadorAparicoes(personagensVivos);
             
-            res.status(200).json({
+            return res.status(200).json({
                 status: 'success',
                 personagens: personagensOrdenados
             });
-            
+
         } else if (req.params.ordenacao == 'Nome') {
-            personagensOrdenados = ordenador(personagensVivos);
+            personagensOrdenados = ordenadorNomes(personagensVivos);
             
-            res.status(200).json({
+            return res.status(200).json({
                 status: 'success',
                 personagens: personagensOrdenados
             });

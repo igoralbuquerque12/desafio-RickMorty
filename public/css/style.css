@@ -1,3 +1,7 @@
 .fw-bold {
     font-weight: 700 !important; 
   }
+
+.card-text {
+    margin-bottom: 5px;  /* Controla o espaçamento entre os parágrafos */
+}

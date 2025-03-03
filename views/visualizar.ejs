@@ -10,22 +10,22 @@
 </head>
 <body>
   <nav class="bg-body-tertiary border-bottom d-flex justify-content-between p-2 px-4">
-    <a class="text-dark fw-bold" href="">Porque este projeto?</a>
-    <a class="text-dark fw-bold" href="">Veja meus outros projetos no GitHub</a>
+    <a class="text-dark fw-bold" href="https://github.com/igoralbuquerque12/desafio-RickMorty/blob/master/README.md">Porque este projeto?</a>
+    <a class="text-dark fw-bold" href="https://github.com/igoralbuquerque12?tab=repositories">Veja meus outros projetos no GitHub</a>
   </nav>
   
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
       <h1 class="display-5 font-weight-bold text-dark p-5">Desafio Rick & Morty</h1>
       <div class="btn-group pr-5" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check d-none" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-dark" for="btnradio1">Todos</label>
+        <input type="radio" class="btn-check d-none" name="btnradio" autocomplete="off" checked>
+        <label class="btn btn-outline-dark" for="btnTodos" id="btnTodos" onclick="window.location.href='/visualizar/Todos'">Todos</label>
       
-        <input type="radio" class="btn-check d-none" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-dark" for="btnradio2">Aparições</label>
+        <input type="radio" class="btn-check d-none" name="btnradio" autocomplete="off">
+        <label class="btn btn-outline-dark" for="btnAparicoes" id="btnAparicoes" onclick="window.location.href='/visualizar/Aparicoes'">Aparições</label>
       
-        <input type="radio" class="btn-check d-none" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-dark" for="btnradio3">Nome</label>
+        <input type="radio" class="btn-check d-none" name="btnradio" autocomplete="off">
+        <label class="btn btn-outline-dark" for="btnNome" id="btnNome" onclick="window.location.href='/visualizar/Nome'">Nome</label>
       </div>
     </div>
   </nav>
