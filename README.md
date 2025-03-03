@@ -31,9 +31,9 @@ Para isso, o projeto exige a implementação de funcionalidades para ordenar os 
 
 ### Backend
 - **Node.js + Express:**
-  - Estrutura do servidor e arquitetura **MVC**.
+  - Estrutura do servidor e arquitetura do projeto.
 - **Controller:**
   - Processamento e envio do arquivo `characters.json` para a view.
 
 ## Conclusão
-Esse projeto me permitiu aplicar conceitos técnicos como **ordenação** e **arquitetura MVC**, além de desenvolver uma aplicação **full-stack** funcional, consolidando e ampliando minhas habilidades como desenvolvedor.
+Este projeto me proporcionou a oportunidade de aplicar conceitos técnicos importantes, como **ordenação de dados** e **arquitetura de aplicações**, além de me permitir desenvolver uma aplicação **full-stack** funcional.
